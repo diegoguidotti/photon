@@ -110,6 +110,29 @@
 			</str>
 		</lst>
 	</requestHandler>
+	
+	<!-- Italian test - Adding more relevance to city -->
+	<requestHandler name="italian" class="solr.SearchHandler">
+		<lst name="defaults">
+			<str name="wt">json</str>
+			<str name="echoParams">explicit</str>
+			<int name="rows">60</int>
+
+			<str name="defType">edismax</str>
+			<str name="q.alt">*:*</str>
+			<str name="fl">id, coordinate, name*, street, housenumber, postcode, country*, city*, type</str>
+			<str name="mm">0&lt;75% 4&lt;65%</str>
+			<str name="bf">div(ranking,2)</str>
+			<str name="pf">name^1.5 name_de street</str>
+			<str name="pf2">name^1 name_de^0.5 street</str>
+			<str name="sort">score desc,housenumber asc</str>
+			<str name="qf">
+				name^2.4 name_de^1.5 street^2 housenumber^3
+				city^5 city_de
+				places^0.8 places_de^0.8 postcode^0.6
+			</str>
+		</lst>
+	</requestHandler>
 
 
 	<!-- A Robust Example
