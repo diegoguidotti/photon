@@ -7,8 +7,14 @@ XX,20
 XXIII,23
 XV,25
 S.,San
-V.,Via
-Via,V.
 F.lli,Fratelli
 SS,Strada statale
 S.S.,Strada statale
+V.,Via
+C.so,Corso
+C/alilso,Corso
+V.le,Viale
+P.za,Piazza
+P.zza,Piazza
+Loc.,Località
+C.da,Contrada
