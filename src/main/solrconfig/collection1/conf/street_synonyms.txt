@@ -1,2 +1,14 @@
 rd, road
 blvd, boulevard
+I,1
+II,2
+III,3
+XX,20
+XXIII,23
+XV,25
+S.,San
+V.,Via
+Via,V.
+F.lli,Fratelli
+SS,Strada statale
+S.S.,Strada statale
